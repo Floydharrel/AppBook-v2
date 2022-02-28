@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_item_bg"
+        android:elevation="3dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_pdf"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/name_of_pdf"
+                android:text="Computer Programming"
+                android:gravity="left|center_vertical"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="right">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Read"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="#EF6817"
+                app:backgroundTint="@null"
+                android:id="@+id/read_pdf"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+              android:gravity="center"
+                android:text="Download"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/read_pdf"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="#00c853"
+                app:backgroundTint="@null"
+                android:id="@+id/dl_pdf"/>
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
